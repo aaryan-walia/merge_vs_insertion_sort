@@ -87,19 +87,19 @@ while True:
 
         # Insertion sort
         start_time_insertion = time.perf_counter()
-        sorted_arr_insertion = insertion_sort(random_list)
+        sorted_arr_insertion = insertion_sort(random_list[:])
         end_time_insertion = time.perf_counter()
         elapsed_time_insertion = end_time_insertion - start_time_insertion
 
         # Merge sort
         start_time_merge = time.perf_counter()
-        sorted_arr_merge = merge_sort(random_list)
+        sorted_arr_merge = merge_sort(random_list[:])
         end_time_merge = time.perf_counter()
         elapsed_time_merge = end_time_merge - start_time_merge
 
         # Tim sort
         start_time_tim = time.perf_counter()
-        sorted_arr_tim = tim_sort(random_list, benchmark)
+        sorted_arr_tim = tim_sort(random_list[:], benchmark)
         end_time_tim = time.perf_counter()
         elapsed_time_tim = end_time_tim - start_time_tim
 
